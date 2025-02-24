@@ -4,86 +4,136 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ctrl Enter - Currículo de Clinton Rodrigues de Souza</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
     body {
-      font-family: 'Arial', sans-serif;
-      background-color: #f4f4f4;
+      font-family: 'Roboto', sans-serif;
+      background: #f0f2f5;
       margin: 0;
       padding: 0;
       color: #333;
-      line-height: 1.6;
     }
     .container {
       max-width: 900px;
-      margin: 30px auto;
+      margin: 40px auto;
       background: #fff;
       padding: 30px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     }
     header {
       text-align: center;
-      margin-bottom: 30px;
-      border-bottom: 2px solid #eee;
       padding-bottom: 20px;
+      border-bottom: 2px solid #e0e0e0;
+    }
+    header img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 15px;
     }
     header h1 {
       margin: 0;
-      font-size: 2.8em;
+      font-size: 2.5em;
       color: #007BFF;
     }
     header p {
+      font-size: 1.1em;
       margin: 10px 0 0;
-      font-size: 1.2em;
     }
     section {
-      margin-bottom: 30px;
+      margin: 30px 0;
     }
-    section h2 {
-      color: #007BFF;
-      border-bottom: 1px solid #ddd;
-      padding-bottom: 10px;
+    .section-title {
+      display: flex;
+      align-items: center;
+      gap: 10px;
       margin-bottom: 20px;
     }
+    .section-title h2 {
+      color: #007BFF;
+      font-size: 1.8em;
+      margin: 0;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 10px;
+      width: 100%;
+    }
     h3 {
-      margin: 15px 0 10px;
+      margin-top: 20px;
       color: #0056b3;
     }
     ul {
       list-style: none;
-      padding: 0;
+      padding-left: 0;
     }
     ul li {
       margin-bottom: 8px;
+      padding-left: 20px;
+      position: relative;
+    }
+    ul li:before {
+      content: "\f111";
+      font-family: "Font Awesome 6 Free";
+      font-weight: 900;
+      position: absolute;
+      left: 0;
+      top: 5px;
+      color: #007BFF;
+      font-size: 0.6em;
     }
     .contact {
       text-align: center;
       background: #007BFF;
       color: #fff;
       padding: 20px;
+      border-radius: 8px;
     }
-    .contact a {
-      color: #fff;
+    .contact p, .contact a {
+      margin: 5px 0;
+      font-size: 1.1em;
+    }
+    .contact i {
+      margin-right: 8px;
+    }
+    a {
       text-decoration: none;
+      color: #fff;
     }
-    .contact a:hover {
+    a:hover {
       text-decoration: underline;
+    }
+    .social-icons a {
+      margin: 0 10px;
+      font-size: 1.5em;
+      color: #fff;
     }
   </style>
 </head>
 <body>
   <div class="container">
     <header>
+      <img src="perfil.jpeg" alt="Foto de Clinton">
       <h1>Ctrl Enter</h1>
-      <p>Serviços de Desenvolvimento e Soluções Tecnológicas</p>
+      <p><i class="fas fa-code"></i> Desenvolvimento &amp; Soluções Tecnológicas</p>
     </header>
 
     <section class="about">
-      <h2>Sobre Mim</h2>
-      <p>Olá, sou Clinton Rodrigues de Souza, um desenvolvedor Full-Stack com sólida experiência na criação de aplicações focadas em integrações, APIs e soluções backend. Com forte atuação em ambientes ágeis, sou especialista em planejamento, gestão de sprints e automação de processos CI/CD. Minha versatilidade me permite atuar tanto no desenvolvimento mobile quanto no front-end, sempre buscando entregar soluções robustas, escaláveis e seguras para atender às demandas do negócio.</p>
+      <div class="section-title">
+        <i class="fas fa-user"></i>
+        <h2>Sobre Mim</h2>
+      </div>
+      <p>Olá, sou Clinton Rodrigues de Souza, um desenvolvedor Full-Stack com experiência em integrações, APIs e soluções backend. Tenho forte atuação em ambientes ágeis, com expertise em planejamento, gestão de sprints e automação de processos CI/CD. Comprometido em entregar soluções robustas, escaláveis e seguras para atender às demandas do negócio.</p>
     </section>
 
     <section class="experience">
-      <h2>Experiência Profissional</h2>
+      <div class="section-title">
+        <i class="fas fa-briefcase"></i>
+        <h2>Experiência Profissional</h2>
+      </div>
       <h3>SoluBio - Desenvolvedor Pleno (Junho de 2024 - Presente)</h3>
       <ul>
         <li>Desenvolvimento de aplicações focadas em integrações e APIs.</li>
@@ -92,13 +142,11 @@
         <li>Desenvolvimento e deploy de aplicativos mobile utilizando Angular e Ionic.</li>
         <li>Gestão de sprints e organização das demandas via Jira.</li>
       </ul>
-
       <h3>SoluBio - Desenvolvedor Júnior (Agosto de 2022 a Junho de 2024)</h3>
       <ul>
         <li>Manutenção e aprimoramento de sistemas web.</li>
         <li>Realização de testes de qualidade para garantir a estabilidade das aplicações.</li>
       </ul>
-
       <h3>Outras Experiências</h3>
       <ul>
         <li>Testador de Software Júnior (Abril de 2022 a Agosto de 2022)</li>
@@ -109,9 +157,12 @@
     </section>
 
     <section class="projects">
-      <h2>Projetos Relevantes</h2>
+      <div class="section-title">
+        <i class="fas fa-project-diagram"></i>
+        <h2>Projetos Relevantes</h2>
+      </div>
       <h3>API de Autenticação</h3>
-      <p>Desenvolvida com Spring Boot e Java 17, esta API implementa autenticação via JWT, autenticação de dois fatores (2FA) com Google Authenticator, gerenciamento seguro de sessões e proteção contra ataques.</p>
+      <p>Desenvolvida com Spring Boot e Java 17, implementa autenticação via JWT, autenticação de dois fatores (2FA) com Google Authenticator, gerenciamento seguro de sessões e proteção contra ataques.</p>
       <h3>Ecommerce Web com Flutter</h3>
       <p>Aplicação com arquitetura modular, utilizando Provider para gerenciamento de estado e operações CRUD para produtos, categorias e usuários.</p>
       <h3>NFC-e API</h3>
@@ -119,7 +170,10 @@
     </section>
 
     <section class="skills">
-      <h2>Habilidades Técnicas</h2>
+      <div class="section-title">
+        <i class="fas fa-tools"></i>
+        <h2>Habilidades Técnicas</h2>
+      </div>
       <ul>
         <li><strong>Linguagens:</strong> JavaScript, TypeScript, Java (Básico), Python (Básico)</li>
         <li><strong>Frameworks:</strong> Node.js, Angular, Ionic, Spring Boot</li>
@@ -129,21 +183,27 @@
     </section>
 
     <section class="education">
-      <h2>Formação Acadêmica</h2>
+      <div class="section-title">
+        <i class="fas fa-graduation-cap"></i>
+        <h2>Formação Acadêmica</h2>
+      </div>
       <ul>
         <li><strong>Instituto Federal de Goiás, Jataí-GO:</strong> Tecnologia em Análise e Desenvolvimento de Sistemas (Março de 2019 a Fevereiro de 2025)</li>
-        <li><strong>Cursos Complementares:</strong> JavaScript & TypeScript, PHP, Active Directory, Flutter, Docker, Cypress (Udemy, Alura e DevMedia)</li>
+        <li><strong>Cursos:</strong> JavaScript &amp; TypeScript, PHP, Active Directory, Flutter, Docker, Cypress (Udemy, Alura e DevMedia)</li>
       </ul>
     </section>
 
     <section class="contact">
-      <h2>Contato</h2>
-      <p>
-        Telefone/Whatsapp: +55 64 9 9998 3353<br>
-        E-mail: <a href="mailto:clintonrodrigues.dev@gmail.com">clintonrodrigues.dev@gmail.com</a><br>
-        LinkedIn: <a href="https://www.linkedin.com/in/clinton-rodrigues-dev/">clinton-rodrigues-dev</a><br>
-        GitHub: <a href="https://github.com/Clintondev">Clintondev</a>
-      </p>
+      <div class="section-title">
+        <i class="fas fa-envelope"></i>
+        <h2>Contato</h2>
+      </div>
+      <p><i class="fas fa-phone"></i> +55 64 9 9998 3353</p>
+      <p><i class="fas fa-envelope"></i> <a href="mailto:clintonrodrigues.dev@gmail.com">clintonrodrigues.dev@gmail.com</a></p>
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/in/clinton-rodrigues-dev/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/Clintondev" target="_blank"><i class="fab fa-github"></i></a>
+      </div>
     </section>
   </div>
 </body>
